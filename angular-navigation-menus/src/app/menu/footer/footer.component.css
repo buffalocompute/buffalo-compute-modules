@@ -1,0 +1,120 @@
+/* Buffalo Compute - Footer
+--------------------------------------------- */
+
+#footer {
+  position: relative;
+  z-index: 1000;
+  height: auto;
+  width: 100%;
+  padding: 9px;
+  margin: 0 auto;
+}
+
+#footer hr {
+  margin: 9px 0;
+}
+
+#intro {
+  padding: 0;
+  margin: 0 auto;
+}
+
+#intro .text p {
+  padding: 0;
+}
+
+#intro .logo {
+  align-self: center;
+}
+
+#outro {
+  padding: 0;
+  margin: 9px 0;
+}
+
+#outro .text {
+  height: auto;
+  width: auto;
+}
+
+#outro .text p {
+  padding: 0;
+  margin: 9px auto;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#outro .menu {
+  height: auto;
+  width: auto;
+}
+
+#outro .menu ul {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  height: auto;
+  width: auto;
+  padding: 0;
+  margin: 9px auto;
+}
+
+#outro ul li {
+  padding: 0;
+  margin: 0 9px 0 0;
+}
+
+#outro .copyright span {
+  width: auto;
+  font-size: 13px;
+  margin: 9px auto;
+  align-self: center;
+}
+
+#outro .copyright {
+  align-self: center;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  #footer {
+    padding: 9px 18px;
+  }
+
+  #intro .logo {
+    height: auto;
+    width: auto;
+    margin: 0 9px 0 0;
+  }
+
+  #outro .text {
+    align-self: center;
+    white-space: nowrap;
+    margin: 0 9px 0 0;
+  }
+
+  #outro .text p {
+    margin: 0;
+  }
+
+  #outro .follow ul li {
+    margin: 0 9px 0 0;
+  }
+
+  #outro .copyright {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #footer {
+    padding: 9px 27px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #footer {
+    padding: 9px 9vw;
+  }
+}

@@ -1,0 +1,77 @@
+/* Buffalo Compute - Swiper
+--------------------------------------------- */
+
+#swiper {
+  padding: 0;
+  margin: 0 auto;
+}
+
+#swiper swiper-slide {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background-color: #0d160b;
+  border: none;
+}
+
+#swiper swiper-slide .swiper-content {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 144px 44px;
+  margin: 0 auto;
+  color: #ffeddf;
+}
+
+#swiper swiper-slide .swiper-content img {
+  opacity: 0.3;
+  position: absolute;
+  height: auto;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#swiper swiper-slide .swiper-title {
+  color: #ffeddf;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+#swiper swiper-slide p {
+  padding: 0;
+  margin: 18px auto;
+  color: #ffeddf;
+  font-size: 18px;
+}
+
+#swiper swiper-slide fluent-button {
+  font-size: 18px;
+  font-weight: 600;
+  --density: 3;
+  --accent-fill-rest: #002673;
+  --accent-stroke-control-rest: #002673;
+  --accent-fill-hover: #3993dd;
+  --accent-stroke-control-hover: #3993dd;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  #swiper swiper-slide .swiper-content {
+    padding: 288px 88px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1400px) {
+  #swiper {
+    margin: 0 6vw;
+  }
+}

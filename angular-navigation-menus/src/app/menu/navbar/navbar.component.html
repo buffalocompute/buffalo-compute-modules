@@ -1,0 +1,70 @@
+<header id="header">
+  <div id="navbar" class="flex-row">
+    <a
+      class="logo flex-row-item"
+      href="/"
+      target="_self"
+      rel="noreferrer noopener"
+      aria-label="Buffalo Compute Link"
+      type="link"
+      ><img
+        src="/assets/BuffaloComputeAppAlt.png"
+        loading="eager"
+        height="30"
+        width="30"
+        alt="Buffalo Compute Logo"
+    /></a>
+    <button
+      class="mobile-menu-icon flex-row-item"
+      aria-label="Buffalo Compute Mobile Menu"
+      type="button"
+      (click)="toggleMobileMenu()"
+      clickable
+    >
+      <img
+        src="/assets/mobile-menu-icon.svg"
+        loading="eager"
+        height="30"
+        width="30"
+        alt="Buffalo Compute Mobile Menu Icon"
+      />
+    </button>
+
+    <nav class="menu flex-row-item">
+      <ul class="flex-row">
+        @for (link of links; track $index) {
+        <li class="flex-row-item">
+          <a
+            [href]="link.href"
+            target="_self"
+            rel="noreferrer noopener"
+            type="link"
+            >{{ link.text }}</a
+          >
+        </li>
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
+@if (navbarMobileVisible === true) {
+<nav id="navbar-mobile" aria-label="Buffalo Compute Navbar Mobile">
+  <ul class="flex-column">
+    @for (link of links; track $index) {
+    <li class="flex-row-item">
+      <a
+        [href]="link.href"
+        target="_self"
+        rel="noreferrer noopener"
+        type="link"
+        >{{ link.text }}</a
+      >
+    </li>
+    }
+  </ul>
+</nav>
+}
+
+<div id="announcement" class="flex-row">
+  <span class="flex-row-item">This is an announcement!</span>
+</div>

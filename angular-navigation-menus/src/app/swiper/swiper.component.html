@@ -1,0 +1,18 @@
+<div id="swiper">
+  <swiper-container>
+    @for (slide of slides; track $index) {
+    <swiper-slide class="flex-row">
+      <div class="swiper-content flex-row-item">
+        <img class="" [src]="slide.imageSource" [alt]="slide.imageAlt" />
+        <span class="swiper-title">{{ slide.title }}</span>
+        <p>
+          {{ slide.paragraph }}
+        </p>
+        <fluent-button appearance="accent" class="btn">{{
+          slide.buttonText
+        }}</fluent-button>
+      </div>
+    </swiper-slide>
+    }
+  </swiper-container>
+</div>
